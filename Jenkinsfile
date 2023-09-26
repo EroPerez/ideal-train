@@ -11,7 +11,7 @@ pipeline {
 //             }
             steps {
                 echo 'Building...'
-                sh 'docker build -t flaskapp::2.3.3' .'
+                sh "docker build -t flaskapp::2.3.3 ."
             }
         }
         stage('Test') {
