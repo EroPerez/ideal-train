@@ -3,12 +3,6 @@ pipeline {
 
     stages {
         stage('Build docker images') {
-//             agent{
-//                 docker{
-//                     image 'flaskapp:2.3.3'
-//                     reuseNode true
-//                 }
-//             }
             steps {
                 echo 'Building...'
                 sh "docker build -t flaskapp:2.3.3 ."
