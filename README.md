@@ -10,4 +10,4 @@ Now that we have our Dockerfile ready, is time to build the docker image.
 
 # Run the Docker image:
 
-`docker run -p 5000:8080 flaskapp:2.3.3 `
+`docker run -p 80:5000 flaskapp:2.3.3 `
